@@ -21,13 +21,13 @@ const Home = () => {
 
                     {/* Main Heading */}
                     <div className="space-y-1 flex flex-col items-start">
-                        <h1 className="text-6xl md:text-8xl font-black text-white tracking-tight leading-[0.9]">
+                        <h1 className="text-5xl md:text-8xl font-black text-white tracking-tight leading-[0.9]">
                             EXPERT
                         </h1>
-                        <h1 className="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 tracking-tight leading-[0.9]">
+                        <h1 className="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 tracking-tight leading-[0.9]">
                             FRONTEND
                         </h1>
-                        <h1 className="text-6xl md:text-8xl font-black text-white tracking-tight leading-[0.9]">
+                        <h1 className="text-5xl md:text-8xl font-black text-white tracking-tight leading-[0.9]">
                             DEVELOPER
                         </h1>
                     </div>
