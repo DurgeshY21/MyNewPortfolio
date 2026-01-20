@@ -14,10 +14,10 @@ const GetInTouch = () => {
 
                 {/* Header - Subtle */}
                 <div className="text-center">
-                    <h2 className="text-sm md:text-base font-bold text-gray-400 tracking-[0.5em] uppercase mb-4">
+                    <h2 className="text-xs md:text-base font-bold text-gray-400 tracking-[0.5em] uppercase mb-4">
                         Is it me you're looking for?
                     </h2>
-                    <h2 className="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter mix-blend-overlay opacity-80 select-none">
+                    <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mix-blend-overlay opacity-80 select-none">
                         Get In Touch
                     </h2>
                 </div>
