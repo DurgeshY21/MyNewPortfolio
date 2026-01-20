@@ -23,29 +23,32 @@ const GetInTouch = () => {
                 </div>
 
                 {/* Massive Interactive Links */}
-                <div className="flex flex-col items-center gap-12 w-full">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-32 w-full">
 
                     {/* Email Item */}
-                    <div className="group relative w-full text-center cursor-pointer">
+                    <div className="group relative text-center cursor-pointer">
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/5 to-blue-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
-                        <h3 className="text-6xl md:text-8xl lg:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300 ease-out transform group-hover:scale-105">
+                        <h3 className="text-5xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300 ease-out transform group-hover:scale-105">
                             EMAIL
                         </h3>
-                        <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0">
-                            <a href="mailto:durgesh.yadav@example.com" className="text-xl md:text-3xl font-medium text-gray-300 hover:text-white tracking-wide mt-4 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
+                        <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 absolute left-1/2 -translate-x-1/2 w-max">
+                            <a href="mailto:durgesh.yadav@example.com" className="text-lg md:text-2xl font-medium text-gray-300 hover:text-white tracking-wide mt-6 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
                                 durgesh.yadav@example.com
                             </a>
                         </div>
                     </div>
 
+                    {/* Divider (Optional, visual separation) */}
+                    <div className="hidden md:block w-px h-32 bg-gradient-to-b from-transparent via-gray-700/50 to-transparent"></div>
+
                     {/* Call Item */}
-                    <div className="group relative w-full text-center cursor-pointer">
+                    <div className="group relative text-center cursor-pointer">
                         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/5 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
-                        <h3 className="text-6xl md:text-8xl lg:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-purple-400 group-hover:to-pink-300 transition-all duration-300 ease-out transform group-hover:scale-105">
+                        <h3 className="text-5xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-purple-400 group-hover:to-pink-300 transition-all duration-300 ease-out transform group-hover:scale-105">
                             CALL
                         </h3>
-                        <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0">
-                            <a href="tel:+916306495920" className="text-xl md:text-3xl font-medium text-gray-300 hover:text-white tracking-wide mt-4 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
+                        <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 absolute left-1/2 -translate-x-1/2 w-max">
+                            <a href="tel:+916306495920" className="text-lg md:text-2xl font-medium text-gray-300 hover:text-white tracking-wide mt-6 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
                                 +91 6306495920
                             </a>
                         </div>
