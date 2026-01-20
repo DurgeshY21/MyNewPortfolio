@@ -2,7 +2,12 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './sections/Home';
 import About from './sections/About';
-import Experience from './sections/Experience';
+import Resume from './sections/Resume';
+import Journey from './sections/Journey';
+import Accreditation from './sections/Accreditation';
+import Skills from './sections/Skills';
+import Services from './sections/Services';
+import Projects from './sections/Projects';
 import GetInTouch from './sections/GetInTouch';
 import './App.css';
 
@@ -13,7 +18,12 @@ function App() {
       <main>
         <Home />
         <About />
-        <Experience />
+        <Resume />
+        <Journey />
+        <Accreditation />
+        <Skills />
+        <Services />
+        <Projects />
         <GetInTouch />
       </main>
     </div>
