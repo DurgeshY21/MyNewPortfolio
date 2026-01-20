@@ -50,9 +50,6 @@ const GetInTouch = () => {
         }
     ];
 
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
 
     return (
         <section id="contact" className="relative w-full pt-16 pb-6 px-6 md:px-12 max-w-7xl mx-auto flex flex-col justify-between min-h-screen">
@@ -104,16 +101,11 @@ const GetInTouch = () => {
                 <div className="flex items-center gap-8">
                     <a href="#" className="text-xs font-bold text-gray-500 uppercase hover:text-white transition-colors">LinkedIn</a>
                     <a href="#" className="text-xs font-bold text-gray-500 uppercase hover:text-white transition-colors">GitHub</a>
-
-                    <button onClick={scrollToTop} className="ml-4 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors shadow-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-white">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
-                        </svg>
-                    </button>
+                    <a href="#" className="text-xs font-bold text-gray-500 uppercase hover:text-white transition-colors">Twitter</a>
                 </div>
             </div>
 
-        </section>
+        </section >
     );
 };
 

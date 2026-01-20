@@ -9,6 +9,7 @@ import Skills from './sections/Skills';
 import Services from './sections/Services';
 import Projects from './sections/Projects';
 import GetInTouch from './sections/GetInTouch';
+import CTA from './sections/CTA';
 import './App.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Skills />
         <Services />
         <Projects />
+        <CTA />
         <GetInTouch />
       </main>
     </div>
