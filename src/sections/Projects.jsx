@@ -26,17 +26,18 @@ const Projects = () => {
         <section id="projects" className="relative w-full py-32 px-6 max-w-[1400px] mx-auto flex flex-col items-center">
 
             {/* Section Header */}
-            <div className="flex flex-col items-center mb-32 space-y-4 text-center">
-                <h2 className="text-[10vw] md:text-[8rem] leading-none font-black text-transparent opacity-10 select-none absolute top-20 left-1/2 -translate-x-1/2 -z-10"
-                    style={{ WebkitTextStroke: '2px #ffffff' }}>
-                    WORKS
-                </h2>
-                <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter relative z-10">
-                    SELECTED <span className="text-blue-500">PROJECTS</span>
-                </h2>
-                <div className="h-1 w-24 bg-blue-500 rounded-full mt-4"></div>
-            </div>
-
+           <div className="flex items-end gap-2 pb-20">
+                    <h2 className="text-6xl md:text-7xl font-black text-transparent select-none leading-none "
+                        style={{ WebkitTextStroke: '2px #3b82f6' }}>
+                        07
+                    </h2>
+                    <div className="flex flex-col">
+                        <h2 className="text-4xl md:text-6xl font-bold text-white uppercase whitespace-nowrap">
+                            LATEST PROJECTS
+                        </h2>
+                        <span className="block h-1 w-full bg-blue-600 mt-1 rounded-full"></span>
+                    </div>
+                </div>
             {/* Projects List - Zig Zag Layout */}
             <div className="flex flex-col gap-32 w-full">
                 {projects.map((project, index) => (
@@ -67,15 +68,15 @@ const Projects = () => {
                                 <span className="text-xs font-bold text-gray-400 uppercase tracking-[0.2em]">{project.category}</span>
                             </div>
 
-                            <h3 className="text-4xl md:text-6xl font-black text-white uppercase leading-[0.9] tracking-tight hover:text-blue-400 transition-colors cursor-pointer">
+                            <h3 className="text-4xl md:text-5xl text-start font-black text-white uppercase leading-[0.9] tracking-tight hover:text-blue-400 transition-colors cursor-pointer">
                                 {project.title}
                             </h3>
 
-                            <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
+                            <p className="text-gray-400 text-lg leading-relaxed max-w-xl text-start">
                                 {project.description}
                             </p>
 
-                            <div className="flex flex-wrap gap-3 pt-4">
+                            <div className="flex flex-wrap gap-3">
                                 {project.tags.map(tag => (
                                     <span key={tag} className="px-4 py-2 rounded-full border border-gray-800 bg-[#0B0E14] text-xs font-bold text-gray-300 uppercase tracking-wider hover:border-blue-500 hover:text-white transition-colors">
                                         {tag}
@@ -83,7 +84,7 @@ const Projects = () => {
                                 ))}
                             </div>
 
-                            <div className="pt-8">
+                            <div className="pt-2">
                                 <button className="group relative px-8 py-3 bg-white text-black font-bold uppercase tracking-wider rounded-full overflow-hidden hover:bg-blue-500 hover:text-white transition-colors duration-300">
                                     <span className="relative z-10 flex items-center gap-2">
                                         View Case Study

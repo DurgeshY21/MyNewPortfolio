@@ -6,15 +6,17 @@ const Journey = () => {
 
             {/* Section Header */}
             <div className="flex flex-col items-center mb-16 space-y-4 text-center">
-                <div className="relative">
-                    <h2 className="text-8xl md:text-9xl font-black text-transparent opacity-30 select-none"
+                <div className="flex items-end gap-4">
+                    <h2 className="text-6xl md:text-7xl font-black text-transparent select-none leading-none "
                         style={{ WebkitTextStroke: '2px #3b82f6' }}>
                         03
                     </h2>
-                    <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl md:text-5xl font-bold text-white uppercase whitespace-nowrap">
-                        MY JOURNEY
-                        <span className="block h-1.5 w-full bg-blue-600 mt-1 rounded-full"></span>
-                    </h2>
+                    <div className="flex flex-col">
+                        <h2 className="text-4xl md:text-6xl font-black text-white uppercase whitespace-nowrap">
+                            MY JOURNEY
+                        </h2>
+                        <span className="block h-1 w-full bg-blue-600 mt-1 rounded-full"></span>
+                    </div>
                 </div>
                 <p className="text-gray-400 text-lg md:text-xl max-w-2xl font-light">
                     A timeline of my professional growth and education
@@ -38,31 +40,31 @@ const Journey = () => {
                         {/* Timeline Item 1 */}
                         <div className="relative pl-8 pb-12 border-l-2 border-cyan-500/30 last:pb-0">
                             {/* Ring Dot */}
-                            <span className="absolute left-[-9px] top-1 h-4 w-4 rounded-full border-2 border-cyan-400 bg-[#111620] shadow-[0_0_10px_rgba(34,211,238,0.6)]"></span>
+                            <span className="absolute left-[-9px] top-1 h-5 w-5 rounded-full border-4 border-blue-400 bg-[#111620] shadow-[0_0_10px_rgba(34,211,238,0.6)]"></span>
 
-                            <h4 className="text-xl font-bold text-white mb-1">
+                            <h4 className="text-xl font-bold text-white mb-1 text-start">
                                 Chandra Shekhar Azad University, Kanpur, UP
                             </h4>
-                            <p className="text-blue-400 font-semibold text-sm mb-3">2023</p>
-                            <p className="text-gray-300 text-lg font-medium">
+                            <p className="text-blue-400 font-semibold text-sm mb-3 text-start">2023</p>
+                            <p className="text-gray-300 text-lg font-medium text-start">
                                 Bachelor of Technology in Computer Science
                             </p>
-                            <p className="text-gray-500 mt-1">GPA: 8.50 / 10.00</p>
+                            <p className="text-gray-500 mt-1 text-start">GPA: 8.50 / 10.00</p>
                         </div>
 
                         {/* Timeline Item 2 */}
                         <div className="relative pl-8">
                             {/* Ring Dot */}
-                            <span className="absolute left-[-9px] top-1 h-4 w-4 rounded-full border-2 border-cyan-400 bg-[#111620] shadow-[0_0_10px_rgba(34,211,238,0.6)]"></span>
+                            <span className="absolute left-[-9px] top-1 h-5 w-5 rounded-full border-4 border-blue-400 bg-[#111620] shadow-[0_0_10px_rgba(34,211,238,0.6)]"></span>
 
-                            <h4 className="text-xl font-bold text-white mb-1">
+                            <h4 className="text-xl font-bold text-white mb-1 text-start">
                                 Bright Angels Intermediate College, Kanpur, UP
                             </h4>
-                            <p className="text-blue-400 font-semibold text-sm mb-3">2018</p>
-                            <p className="text-gray-300 text-lg font-medium">
+                            <p className="text-blue-400 font-semibold text-sm mb-3 text-start">2018</p>
+                            <p className="text-gray-300 text-lg font-medium text-start">
                                 Intermediate
                             </p>
-                            <p className="text-gray-500 mt-1">Percentage: 87.5</p>
+                            <p className="text-gray-500 mt-1 text-start">Percentage: 87.5</p>
                         </div>
                     </div>
                 </div>
@@ -80,12 +82,12 @@ const Journey = () => {
                     {/* Timeline Item 1 */}
                     <div className="relative pl-8">
                         {/* Ring Dot */}
-                        <span className="absolute left-[-9px] top-1 h-4 w-4 rounded-full border-2 border-cyan-400 bg-[#111620] shadow-[0_0_10px_rgba(34,211,238,0.6)]"></span>
+                        <span className="absolute left-[-9px] top-1 h-5 w-5 rounded-full border-4 border-blue-400 bg-[#111620] shadow-[0_0_10px_rgba(34,211,238,0.6)]"></span>
 
-                        <h4 className="text-xl font-bold text-white mb-1">
+                        <h4 className="text-xl font-bold text-white mb-1 text-start">
                             Giichi IT Solutions Pvt Ltd
                         </h4>
-                        <p className="text-blue-400 font-semibold text-sm mb-4">
+                        <p className="text-blue-400 font-semibold text-sm mb-4 text-start">
                             June 2024 – Present | Frontend Developer
                         </p>
 
@@ -100,24 +102,24 @@ const Journey = () => {
 
                         {/* Bullet Points */}
                         <ul className="space-y-3">
-                            <li className="flex gap-3 text-gray-400 text-sm md:text-base leading-relaxed">
-                                <span className="text-gray-600 mt-1.5">•</span>
+                            <li className="flex gap-3 text-gray-400 text-sm md:text-base leading-relaxed text-start">
+                                <span className="text-gray-600 ">•</span>
                                 Developed DEX frontend for real-time asset swapping and liquidity management.
                             </li>
-                            <li className="flex gap-3 text-gray-400 text-sm md:text-base leading-relaxed">
-                                <span className="text-gray-600 mt-1.5">•</span>
+                            <li className="flex gap-3 text-gray-400 text-sm md:text-base leading-relaxed text-start">
+                                <span className="text-gray-600">•</span>
                                 Engineered a real-time trading platform with low-latency data updates and charting tools.
                             </li>
-                            <li className="flex gap-3 text-gray-400 text-sm md:text-base leading-relaxed">
-                                <span className="text-gray-600 mt-1.5">•</span>
+                            <li className="flex gap-3 text-gray-400 text-sm md:text-base leading-relaxed text-start">
+                                <span className="text-gray-600">•</span>
                                 Built PoXScan Explorer for transparent blockchain transaction tracking.
                             </li>
-                            <li className="flex gap-3 text-gray-400 text-sm md:text-base leading-relaxed">
-                                <span className="text-gray-600 mt-1.5">•</span>
+                            <li className="flex gap-3 text-gray-400 text-sm md:text-base leading-relaxed text-start">
+                                <span className="text-gray-600">•</span>
                                 Designed and deployed Telegram Mini App for seamless on-the-go user engagement.
                             </li>
-                            <li className="flex gap-3 text-gray-400 text-sm md:text-base leading-relaxed">
-                                <span className="text-gray-600 mt-1.5">•</span>
+                            <li className="flex gap-3 text-gray-400 text-sm md:text-base leading-relaxed text-start">
+                                <span className="text-gray-600">•</span>
                                 Created a staking platform for secure asset delegation and yield optimization.
                             </li>
                         </ul>

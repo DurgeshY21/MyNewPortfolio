@@ -3,7 +3,7 @@ import Pic from '../assets/PIC.jpeg';
 
 const Home = () => {
     return (
-        <section id="home" className="relative w-full min-h-screen flex items-center justify-center pt-10 px-6 max-w-7xl mx-auto overflow-hidden">
+        <section id="home" className="relative w-full min-h-screen flex items-center justify-center pt-0 px-6 max-w-7xl mx-auto overflow-hidden">
 
             {/* Content Wrapper */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
@@ -45,7 +45,7 @@ const Home = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
                         </a>
-                        <a href="#contact" className="px-8 py-3.5 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/25 flex items-center gap-2">
+                        <a href="#contact" className="px-8 py-3.5 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/25 flex items-center gap-2">
                             Hire Me
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-yellow-300">
                                 <path fillRule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.914-.143z" clipRule="evenodd" />

@@ -15,29 +15,31 @@ const Accreditation = () => {
 
                 {/* Header */}
                 <div className="relative">
-                    <div className="relative inline-block">
-                        <h2 className="text-7xl md:text-8xl font-black text-transparent opacity-30 select-none leading-none absolute -top-4 -left-2 z-0"
-                            style={{ WebkitTextStroke: '1px #3b82f6' }}>
-                            04
-                        </h2>
-                        <h2 className="relative z-10 text-4xl md:text-5xl font-black text-white uppercase leading-tight">
+                    <div className="flex items-center gap-4">
+                    <h2 className="text-6xl md:text-7xl font-black text-transparent select-none leading-none "
+                        style={{ WebkitTextStroke: '2px #3b82f6' }}>
+                        02
+                    </h2>
+                    <div className="flex flex-col">
+                        <h2 className="text-4xl md:text-5xl font-black text-white uppercase whitespace-nowrap">
                             PROFESSIONAL <br />
                             <span className="relative">
                                 ACCREDITATION
-                                <span className="absolute -bottom-2 left-0 w-1/3 h-1.5 bg-blue-600 rounded-full"></span>
-                            </span>
+                                </span>
                         </h2>
+                        <span className="block h-1 w-full bg-blue-600 mt-1 rounded-full"></span>
                     </div>
+                </div>
                 </div>
 
                 {/* Description */}
-                <p className="text-gray-400 text-lg leading-relaxed max-w-lg">
+                <p className="text-gray-400 text-lg leading-relaxed max-w-lg text-start">
                     Verified expertise in frontend development, demonstrating deep understanding and commitment to industry standards and best practices.
                 </p>
 
                 {/* Buttons */}
                 <div className="flex flex-wrap gap-6">
-                    <a href="#contact" className="px-8 py-4 rounded-full bg-blue-600 text-white font-bold tracking-wide hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/25">
+                    <a href="#contact" className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold tracking-wide hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/25">
                         CONTACT ME
                     </a>
                     <a href="#projects" className="px-8 py-4 rounded-full bg-[#111620] border border-gray-700 text-gray-300 font-bold tracking-wide hover:bg-gray-800 hover:text-white transition-colors">
@@ -46,18 +48,18 @@ const Accreditation = () => {
                 </div>
 
                 {/* Stats */}
-                <div className="flex gap-12 pt-4">
+                <div className="flex gap-28 pt-8 border-t-1 border-[#ffffff]/5">
                     <div>
                         <h4 className="text-3xl font-black text-white">5+</h4>
-                        <p className="text-xs font-bold text-cyan-400 uppercase tracking-wider mt-1">Certifications</p>
+                        <p className="text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 uppercase tracking-wider mt-1">Certifications</p>
                     </div>
                     <div>
                         <h4 className="text-3xl font-black text-white">10+</h4>
-                        <p className="text-xs font-bold text-cyan-400 uppercase tracking-wider mt-1">Courses</p>
+                        <p className="text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 uppercase tracking-wider mt-1">Courses</p>
                     </div>
                     <div>
                         <h4 className="text-3xl font-black text-white">100%</h4>
-                        <p className="text-xs font-bold text-cyan-400 uppercase tracking-wider mt-1">Verified</p>
+                        <p className="text-xs font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 uppercase tracking-wider mt-1">Verified</p>
                     </div>
                 </div>
 

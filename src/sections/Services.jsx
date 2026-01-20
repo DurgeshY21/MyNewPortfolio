@@ -39,16 +39,16 @@ const Services = () => {
 
             {/* Section Header */}
             <div className="flex flex-col items-center mb-16 space-y-4 text-center">
-                <div className="relative">
-                    <h2 className="text-8xl md:text-9xl font-black text-transparent opacity-30 select-none"
+                <div className="flex items-end gap-2">
+                    <h2 className="text-6xl md:text-7xl font-black text-transparent select-none leading-none "
                         style={{ WebkitTextStroke: '2px #3b82f6' }}>
                         06
                     </h2>
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center">
-                        <h2 className="text-4xl md:text-5xl font-bold text-white uppercase whitespace-nowrap">
-                            SERVICES I PROVIDE
-                            <span className="block h-1.5 w-full bg-blue-600 mt-1 rounded-full"></span>
+                    <div className="flex flex-col">
+                        <h2 className="text-4xl md:text-6xl font-bold text-white uppercase whitespace-nowrap">
+                        SERVICES I PROVIDE
                         </h2>
+                        <span className="block h-1 w-full bg-blue-600 mt-1 rounded-full"></span>
                     </div>
                 </div>
                 <p className="text-gray-400 text-lg md:text-xl max-w-2xl font-light">

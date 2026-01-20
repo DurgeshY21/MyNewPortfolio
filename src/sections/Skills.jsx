@@ -7,15 +7,17 @@ const Skills = () => {
 
             {/* Section Header */}
             <div className="flex flex-col items-center mb-16 space-y-4 text-center">
-                <div className="relative">
-                    <h2 className="text-8xl md:text-9xl font-black text-transparent opacity-30 select-none"
+                <div className="flex items-end gap-4">
+                    <h2 className="text-6xl md:text-7xl font-black text-transparent select-none leading-none "
                         style={{ WebkitTextStroke: '2px #3b82f6' }}>
                         05
                     </h2>
-                    <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl md:text-5xl font-bold text-white uppercase whitespace-nowrap">
-                        MY SKILLS
-                        <span className="block h-1.5 w-full bg-blue-600 mt-1 rounded-full"></span>
-                    </h2>
+                    <div className="flex flex-col">
+                        <h2 className="text-4xl md:text-6xl font-black text-white uppercase whitespace-nowrap">
+                            MY SKILLS
+                        </h2>
+                        <span className="block h-1 w-full bg-blue-600 mt-1 rounded-full"></span>
+                    </div>
                 </div>
                 <p className="text-gray-400 text-lg md:text-xl max-w-2xl font-light">
                     My technical stack and expertise
@@ -27,7 +29,7 @@ const Skills = () => {
                 {/* Card 1: Frontend & Javascript */}
                 <div className="bg-[#111620] border border-gray-800 rounded-[2rem] p-8 hover:border-blue-500/30 transition-colors duration-300">
                     <div className="flex items-center gap-3 mb-8 text-white font-bold tracking-wide uppercase">
-                        <span className="text-blue-500 text-xl">&lt;/&gt;</span>
+                        <span className="text-blue-400 text-xl">&lt;/&gt;</span>
                         FRONTEND & JAVASCRIPT
                     </div>
 
@@ -41,10 +43,10 @@ const Skills = () => {
                             <div key={skill.name}>
                                 <div className="flex justify-between mb-2">
                                     <span className="text-sm font-bold text-gray-300 uppercase">{skill.name}</span>
-                                    <span className="text-sm font-bold text-blue-500">{skill.width}</span>
+                                    <span className="text-sm font-bold text-blue-400">{skill.width}</span>
                                 </div>
                                 <div className="h-2 w-full bg-gray-800 rounded-full overflow-hidden">
-                                    <div className="h-full bg-blue-600 rounded-full animate-progress origin-left" style={{ width: skill.width }}></div>
+                                    <div className="h-full bg-blue-400 rounded-full animate-progress origin-left" style={{ width: skill.width }}></div>
                                 </div>
                             </div>
                         ))}
@@ -54,7 +56,7 @@ const Skills = () => {
                 {/* Card 2: Web3 & Blockchain */}
                 <div className="bg-[#111620] border border-gray-800 rounded-[2rem] p-8 hover:border-blue-500/30 transition-colors duration-300">
                     <div className="flex items-center gap-3 mb-10 text-white font-bold tracking-wide uppercase">
-                        <span className="text-cyan-400 text-xl">❖</span>
+                        <span className="text-blue-400 text-xl">❖</span>
                         WEB3 & BLOCKCHAIN
                     </div>
 
@@ -76,7 +78,7 @@ const Skills = () => {
                                             strokeWidth="3"
                                         />
                                         <path
-                                            className="text-cyan-400 animate-circle-progress"
+                                            className="text-blue-400 animate-circle-progress"
                                             strokeDasharray="100, 100"
                                             fill="none"
                                             stroke="currentColor"
@@ -98,7 +100,7 @@ const Skills = () => {
                 {/* Card 3: Styling & Design */}
                 <div className="bg-[#111620] border border-gray-800 rounded-[2rem] p-8 hover:border-blue-500/30 transition-colors duration-300">
                     <div className="flex items-center gap-3 mb-8 text-white font-bold tracking-wide uppercase">
-                        <span className="text-blue-500 text-xl">🎨</span>
+                        <span className="text-blue-400 text-xl">🎨</span>
                         STYLING & DESIGN
                     </div>
 
@@ -111,10 +113,10 @@ const Skills = () => {
                             <div key={skill.name}>
                                 <div className="flex justify-between mb-2">
                                     <span className="text-sm font-bold text-gray-300 uppercase">{skill.name}</span>
-                                    <span className="text-sm font-bold text-blue-500">{skill.width}</span>
+                                    <span className="text-sm font-bold text-blue-400">{skill.width}</span>
                                 </div>
                                 <div className="h-2 w-full bg-gray-800 rounded-full overflow-hidden">
-                                    <div className="h-full bg-blue-600 rounded-full animate-progress origin-left" style={{ width: skill.width }}></div>
+                                    <div className="h-full bg-blue-400 rounded-full animate-progress origin-left" style={{ width: skill.width }}></div>
                                 </div>
                             </div>
                         ))}
@@ -124,7 +126,7 @@ const Skills = () => {
                 {/* Card 4: Tools & Real-time */}
                 <div className="bg-[#111620] border border-gray-800 rounded-[2rem] p-8 hover:border-blue-500/30 transition-colors duration-300">
                     <div className="flex items-center gap-3 mb-8 text-white font-bold tracking-wide uppercase">
-                        <span className="text-cyan-400 text-xl">⚡</span>
+                        <span className="text-blue-400 text-xl">⚡</span>
                         TOOLS & REAL-TIME
                     </div>
 
@@ -136,7 +138,7 @@ const Skills = () => {
                             'Vercel & Docker'
                         ].map((tool) => (
                             <div key={tool} className="flex items-center gap-4 group">
-                                <div className="h-10 w-10 rounded-full bg-cyan-900/30 flex items-center justify-center group-hover:bg-cyan-600 transition-colors">
+                                <div className="h-10 w-10 rounded-full bg-cyan-900/20 flex items-center justify-center group-hover:bg-cyan-600 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 text-cyan-400 group-hover:text-white">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                     </svg>

@@ -58,16 +58,18 @@ const About = () => {
         <section id="about" className="relative w-full py-20 px-6 max-w-7xl mx-auto flex flex-col items-start min-h-screen justify-center">
 
             {/* Header Section - Left Aligned */}
-            <div className="flex flex-col items-start mb-16 space-y-4 text-left w-full pl-4 md:pl-0">
-                <div className="relative inline-block">
-                    <h2 className="text-8xl md:text-9xl font-black text-transparent opacity-30 select-none leading-none"
+            <div className="flex flex-col items-center mb-16 space-y-4 text-center w-full pl-4 md:pl-0">
+                <div className="flex items-end gap-4">
+                    <h2 className="text-6xl md:text-7xl font-black text-transparent select-none leading-none "
                         style={{ WebkitTextStroke: '2px #3b82f6' }}>
                         02
                     </h2>
-                    <h2 className="absolute top-1/2 left-0 -translate-y-1/2 translate-x-12 text-4xl md:text-5xl font-bold text-white uppercase whitespace-nowrap pl-4">
-                        About Me
-                        <span className="block h-1.5 w-full bg-blue-600 mt-1 rounded-full"></span>
-                    </h2>
+                    <div className="flex flex-col">
+                        <h2 className="text-4xl md:text-6xl text-white uppercase whitespace-nowrap font-black ">
+                            ABOUT ME
+                        </h2>
+                        <span className="block h-1 w-full bg-blue-600 mt-1 rounded-full"></span>
+                    </div>
                 </div>
                 <p className="text-gray-400 text-lg md:text-xl max-w-2xl font-light pl-2">
                     Experienced Frontend Developer, passionate about building high-quality web applications.
@@ -83,7 +85,7 @@ const About = () => {
                 </div>
 
                 {/* Right Column - Content Card */}
-                <div className="w-full bg-[#111620] border border-gray-800 rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                <div className="w-full bg-[#111620] border border-gray-800 rounded-[2.5rem] p-8 shadow-2xl relative overflow-hidden">
                     {/* Glow effect */}
                     <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-blue-600/10 rounded-full blur-[80px] -z-0"></div>
 
@@ -91,11 +93,11 @@ const About = () => {
 
                         {/* Card Header */}
                         <div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-blue-500 tracking-wide uppercase mb-2">
-                                Durgesh Yadav <span className="text-gray-300">(Frontend Developer)</span>
+                            <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 tracking-wide uppercase mb-2 text-start ">
+                                Durgesh Yadav <span className="">(Frontend Developer)</span>
                             </h3>
-                            <p className="text-sm font-semibold text-gray-500 tracking-widest uppercase mb-6">
-                                5+ Years of Experience
+                            <p className="text-sm font-semibold text-gray-500 tracking-widest uppercase mb-6 text-start">
+                                2+ Years of Experience
                             </p>
                             <div className="h-px w-full bg-gray-800"></div>
                         </div>
@@ -107,7 +109,7 @@ const About = () => {
                                     <div className="mt-1 p-1.5 rounded-lg bg-gray-800/50 group-hover:bg-blue-500/10 transition-colors">
                                         {item.icon}
                                     </div>
-                                    <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+                                    <p className="text-gray-300 text-base md:text-[15px] leading-relaxed text-start">
                                         {item.text}
                                     </p>
                                 </div>
@@ -125,7 +127,7 @@ const About = () => {
                                         <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
                                     </svg>
                                 </div>
-                                <span className="font-medium">+91 9478629522</span>
+                                <span className="font-medium text-center text-[15px] text-nowrap">+91 6306495920</span>
                             </a>
                             <a href="mailto:durgesh.yadav@example.com" className="flex items-center gap-3 text-white hover:text-blue-400 transition-colors group">
                                 <div className="p-2 rounded-full bg-blue-600/10 group-hover:bg-blue-600/20">
@@ -134,7 +136,7 @@ const About = () => {
                                         <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                                     </svg>
                                 </div>
-                                <span className="font-medium">durgesh.yadav@example.com</span>
+                                <span className="font-medium">durgeshy5226@gmail.com</span>
                             </a>
                         </div>
 
