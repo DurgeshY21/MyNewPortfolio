@@ -2,7 +2,7 @@ import React from 'react';
 
 const GetInTouch = () => {
     return (
-        <section id="contact" className="relative w-full py-20 px-4 md:px-12 max-w-7xl mx-auto flex flex-col justify-between min-h-[90vh] overflow-hidden">
+        <section id="contact" className="relative w-full pt-20 px-4 md:px-12 max-w-7xl mx-auto flex flex-col justify-between min-h-[90vh] overflow-hidden">
 
             {/* Kinetic Background */}
             <div className="absolute inset-0 pointer-events-none z-0">
@@ -28,7 +28,7 @@ const GetInTouch = () => {
                     {/* Email Item */}
                     <div className="group relative text-center cursor-pointer">
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/5 to-blue-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
-                        <h3 className="text-5xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300 ease-out transform group-hover:scale-105">
+                        <h3 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300 ease-out transform group-hover:scale-105">
                             EMAIL
                         </h3>
                         <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 absolute left-1/2 -translate-x-1/2 w-max">
@@ -44,7 +44,7 @@ const GetInTouch = () => {
                     {/* Call Item */}
                     <div className="group relative text-center cursor-pointer">
                         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/5 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
-                        <h3 className="text-5xl md:text-7xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-purple-400 group-hover:to-pink-300 transition-all duration-300 ease-out transform group-hover:scale-105">
+                        <h3 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-purple-400 group-hover:to-pink-300 transition-all duration-300 ease-out transform group-hover:scale-105">
                             CALL
                         </h3>
                         <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 absolute left-1/2 -translate-x-1/2 w-max">
@@ -60,8 +60,8 @@ const GetInTouch = () => {
             {/* Minimal Footer */}
             <div className="w-full pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-end md:items-center gap-6 z-10">
                 <div className="flex flex-col gap-1">
-                    <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">Designed & Built by</span>
-                    <span className="text-sm font-bold text-white uppercase tracking-wider">Durgesh Yadav © 2024</span>
+                    <span className="text-xs font-bold text-gray-500 uppercase tracking-widest text-start">Designed & Built by</span>
+                    <span className="text-sm font-bold text-white uppercase tracking-wider text-start">Durgesh Yadav © 2024</span>
                 </div>
 
                 <div className="flex items-center gap-8">
