@@ -10,7 +10,7 @@ const GetInTouch = () => {
                 <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] mix-blend-screen animate-pulse" style={{ animationDelay: '2s' }}></div>
             </div>
 
-            <div className="w-full flex-grow flex flex-col justify-center items-center z-10 md:-mb-40">
+            <div className="w-full flex-grow flex flex-col justify-center items-center z-10 md:-mb-20">
 
                 {/* Header - Subtle */}
                 <div className="text-center">
@@ -23,16 +23,16 @@ const GetInTouch = () => {
                 </div>
 
                 {/* Massive Interactive Links */}
-                <div className="flex flex-row items-center justify-center gap-12 md:gap-32 w-full mt-4 md:mt-0">
+                <div className="flex flex-row items-center justify-center gap-6 md:gap-32 w-full mt-4 md:mt-0">
 
                     {/* Email Item */}
                     <div className="group relative text-center cursor-pointer">
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/5 to-blue-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
-                        <h3 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300 ease-out transform group-hover:scale-105">
+                        <h3 className="text-lg md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300 ease-out transform group-hover:scale-105">
                             EMAIL
                         </h3>
-                        <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 absolute left-1/2 -translate-x-1/2 w-max">
-                            <a href="mailto:durgesh.yadav@example.com" className="text-lg md:text-xl font-medium text-gray-300 hover:text-white tracking-wide mt-6 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
+                        <div className="w-max mx-auto">
+                            <a href="mailto:durgesh.yadav@example.com" className="text-xs md:text-xl font-medium text-gray-300 hover:text-white tracking-wide mt-2 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
                                 durgeshy5226@gmail.com
                             </a>
                         </div>
@@ -44,11 +44,11 @@ const GetInTouch = () => {
                     {/* Call Item */}
                     <div className="group relative text-center cursor-pointer">
                         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/5 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
-                        <h3 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-purple-400 group-hover:to-pink-300 transition-all duration-300 ease-out transform group-hover:scale-105">
+                        <h3 className="text-lg md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-purple-400 group-hover:to-pink-300 transition-all duration-300 ease-out transform group-hover:scale-105">
                             CALL
                         </h3>
-                        <div className="h-0 group-hover:h-auto overflow-hidden transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 absolute left-1/2 -translate-x-1/2 w-max">
-                            <a href="tel:+916306495920" className="text-lg md:text-xl font-medium text-gray-300 hover:text-white tracking-wide mt-6 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
+                        <div className="w-max mx-auto">
+                            <a href="tel:+916306495920" className="text-xs md:text-xl font-medium text-gray-300 hover:text-white tracking-wide mt-2 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
                                 +91 6306495920
                             </a>
                         </div>
@@ -58,40 +58,40 @@ const GetInTouch = () => {
             </div>
 
             {/* Minimal Footer */}
-            <div className="w-full pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-end md:items-center gap-6 z-10">
+            <div className="w-full pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center md:items-center gap-6 z-10">
                 <div className="flex flex-col gap-1">
-                    <span className="text-xs font-bold text-gray-500 uppercase tracking-widest text-start">Designed & Built by</span>
-                    <span className="text-sm font-bold text-white uppercase tracking-wider text-start">Durgesh Yadav © 2024</span>
+                    <span className="text-xs font-bold text-gray-500 uppercase tracking-widest text-center md:text-start">Designed & Built by</span>
+                    <span className="text-sm font-bold text-white uppercase tracking-wider text-center md:text-start">Durgesh Yadav © 2024</span>
                 </div>
 
-               <div className="flex items-center gap-8">
-    {[
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/durgeshyadav21/',
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/DurgeshY21',
-      },
-      {
-        name: 'Twitter',
-        url: 'https://x.com/durgesh_yadav21',
-      },
-    ].map((social) => (
-      <a
-        key={social.name}
-        href={social.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-xs font-bold text-gray-500 uppercase hover:text-white transition-colors relative group"
-      >
-        {social.name}
-        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-      </a>
-    ))}
-  </div>
- </div>
+                <div className="flex items-center gap-8">
+                    {[
+                        {
+                            name: 'LinkedIn',
+                            url: 'https://www.linkedin.com/in/durgeshyadav21/',
+                        },
+                        {
+                            name: 'GitHub',
+                            url: 'https://github.com/DurgeshY21',
+                        },
+                        {
+                            name: 'Twitter',
+                            url: 'https://x.com/durgesh_yadav21',
+                        },
+                    ].map((social) => (
+                        <a
+                            key={social.name}
+                            href={social.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs font-bold text-gray-500 uppercase hover:text-white transition-colors relative group"
+                        >
+                            {social.name}
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                    ))}
+                </div>
+            </div>
 
         </section >
     );
