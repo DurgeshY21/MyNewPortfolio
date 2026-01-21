@@ -4,7 +4,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center px-0 md:px-8 py-6 max-w-7xl mx-auto w-full sticky top-0 z-50 space-grotesk-font">
+    <nav className="flex justify-between items-center px-0 md:px-8 pb-6 max-w-7xl mx-auto w-full sticky top-0 z-50 space-grotesk-font">
       {/* Navbar Background */}
       <div className="absolute inset-0 bg-[#0B0E14]/80 backdrop-blur-md -z-10"></div>
 

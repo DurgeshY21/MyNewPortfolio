@@ -2,7 +2,7 @@ import React from 'react';
 
 const GetInTouch = () => {
     return (
-        <section id="contact" className="space-grotesk-font relative w-full px-4 md:px-12 max-w-7xl mx-auto flex flex-col justify-between min-h-[60vh] overflow-hidden">
+        <section id="contact" className="space-grotesk-font relative w-full px-4 md:px-12 max-w-7xl mx-auto flex flex-col justify-between  md:min-h-[60vh] overflow-hidden">
 
             {/* Kinetic Background */}
             <div className="absolute inset-0 pointer-events-none z-0">
@@ -10,7 +10,7 @@ const GetInTouch = () => {
                 <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] mix-blend-screen animate-pulse" style={{ animationDelay: '2s' }}></div>
             </div>
 
-            <div className="w-full flex-grow flex flex-col justify-center items-center z-10 -mb-40">
+            <div className="w-full flex-grow flex flex-col justify-center items-center z-10 md:-mb-40">
 
                 {/* Header - Subtle */}
                 <div className="text-center">
@@ -23,7 +23,7 @@ const GetInTouch = () => {
                 </div>
 
                 {/* Massive Interactive Links */}
-                <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-32 w-full">
+                <div className="flex flex-row items-center justify-center gap-12 md:gap-32 w-full mt-4 md:mt-0">
 
                     {/* Email Item */}
                     <div className="group relative text-center cursor-pointer">
