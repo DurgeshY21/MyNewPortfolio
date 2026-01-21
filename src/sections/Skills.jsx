@@ -32,7 +32,7 @@ const Skills = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
 
                 {/* Card 1: Frontend & Javascript */}
-                <Reveal delay={0.2} width='100%'>
+                <Reveal delay={0.2} width='100%' className="h-full">
                     <div className="bg-[#111620] border border-gray-800 rounded-[2rem] p-6 md:p-8 hover:border-blue-500/30 transition-colors duration-300 h-full">
                         <div className="flex items-center gap-2 md:gap-3 mb-8 text-white font-bold tracking-wide uppercase">
                             <span className="text-blue-400 text-sm md:text-xl text-start text-nowrap">&lt;/&gt;</span>
@@ -61,7 +61,7 @@ const Skills = () => {
                 </Reveal>
 
                 {/* Card 2: Web3 & Blockchain */}
-                <Reveal delay={0.3} width='100%'>
+                <Reveal delay={0.3} width='100%' className="h-full">
                     <div className="bg-[#111620] border border-gray-800 rounded-[2rem] p-6 md:p-8 hover:border-blue-500/30 transition-colors duration-300 h-full">
                         <div className="flex items-center gap-3 mb-10 text-white font-bold tracking-wide uppercase">
                             <span className="text-blue-400 text-sm md:text-xl">❖</span>
@@ -107,7 +107,7 @@ const Skills = () => {
                 </Reveal>
 
                 {/* Card 3: Styling & Design */}
-                <Reveal delay={0.4} width='100%'>
+                <Reveal delay={0.4} width='100%' className="h-full">
                     <div className="bg-[#111620] border border-gray-800 rounded-[2rem] p-6 md:p-8 hover:border-blue-500/30 transition-colors duration-300 h-full">
                         <div className="flex items-center gap-2 md:gap-3 mb-8 text-white font-bold tracking-wide uppercase">
                             <span className="text-blue-400 text-sm md:text-xl">🎨</span>
@@ -135,7 +135,7 @@ const Skills = () => {
                 </Reveal>
 
                 {/* Card 4: Tools & Real-time */}
-                <Reveal delay={0.5} width='100%'>
+                <Reveal delay={0.5} width='100%' className="h-full">
                     <div className="bg-[#111620] border border-gray-800 rounded-[2rem] p-6 md:p-8 hover:border-blue-500/30 transition-colors duration-300 h-full">
                         <div className="flex items-center gap-2 md:gap-3 mb-6 md:mb-8 text-white font-bold tracking-wide uppercase">
                             <span className="text-blue-400 text-sm md:text-xl text-start text-nowrap">⚡</span>

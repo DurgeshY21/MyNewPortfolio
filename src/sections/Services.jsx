@@ -64,7 +64,7 @@ const Services = () => {
             {/* Services Grid - 3 Columns */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full md:px-4">
                 {services.map((service, index) => (
-                    <Reveal key={service.id} delay={index * 0.2}>
+                    <Reveal key={service.id} delay={index * 0.2} className="h-full">
                         <div className="relative bg-[#111620] border border-gray-800 rounded-[2rem] p-8 overflow-hidden group hover:border-blue-500/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(59,130,246,0.2)] h-full">
 
                             {/* Hover Gradient Background */}

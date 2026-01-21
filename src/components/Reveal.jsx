@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const Reveal = ({ children, width = 'fit-content', delay = 0 }) => {
+const Reveal = ({ children, width = 'fit-content', delay = 0, className = '' }) => {
     const ref = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
 
@@ -13,8 +13,8 @@ const Reveal = ({ children, width = 'fit-content', delay = 0 }) => {
                 }
             },
             {
-                threshold: 0.1, // Trigger when 10% of the element is visible
-                rootMargin: '0px 0px -50px 0px' // Offset to trigger slightly before bottom
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
             }
         );
 
@@ -30,12 +30,14 @@ const Reveal = ({ children, width = 'fit-content', delay = 0 }) => {
     }, []);
 
     return (
-        <div ref={ref} style={{ position: 'relative', width, overflow: 'hidden' }}>
+        <div ref={ref} className={className} style={{ position: 'relative', width }}>
             <div
                 style={{
+                    height: '100%',
                     transform: isVisible ? 'translateY(0)' : 'translateY(75px)',
                     opacity: isVisible ? 1 : 0,
                     transition: `all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) ${delay}s`,
+                    pointerEvents: isVisible ? 'auto' : 'none',
                 }}
             >
                 {children}
