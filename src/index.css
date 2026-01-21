@@ -28,3 +28,8 @@ body {
   font-family: "Space Grotesk", sans-serif;
   
 }
+
+/* Smooth scrolling for entire website */
+html {
+  scroll-behavior: smooth;
+}

@@ -40,7 +40,7 @@ const Resume = () => {
 
                     {/* Right Content / CTA */}
                     <div className="flex flex-col items-center gap-4 min-w-max">
-                        <a href="/resume.pdf" download className="group text-sm md:text-lg relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-400 hover:bg-cyan-300 text-black font-bold rounded-full transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(34,211,238,0.3)] hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]">
+                        <a href="https://drive.google.com/file/d/1pdyzhOYJLvS6UiS5RkqIWFXrLN1mynG7/view?usp=sharing" download className="group text-sm md:text-lg relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-400 hover:bg-cyan-300 text-black font-bold rounded-full transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(34,211,238,0.3)] hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]">
                             DOWNLOAD RESUME
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5 group-hover:translate-y-1 transition-transform">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M12 12.75l-3-3m3 3 3-3m-3 3V3" />

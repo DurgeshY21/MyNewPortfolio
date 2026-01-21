@@ -32,11 +32,11 @@ const CTA = () => {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-3 md:grid-cols-3 gap-4 md:gap-12 w-full max-w-4xl mx-auto mb-8 md:mb-16 border-y border-white/5 py-6 md:py-12">
                     <div className="flex flex-col items-center justify-center p-4">
-                        <span className="text-2xl md:text-4xl md:text-5xl font-bold text-white mb-2">50+</span>
+                        <span className="text-2xl md:text-4xl md:text-5xl font-bold text-white mb-2">10+</span>
                         <span className="text-gray-500 text-[10px] md:text-xs font-bold tracking-widest uppercase text-nowrap">Projects</span>
                     </div>
                     <div className="flex flex-col items-center justify-center p-4 md:border-x border-white/5">
-                        <span className="text-2xl md:text-4xl md:text-5xl font-bold text-white mb-2">5+</span>
+                        <span className="text-2xl md:text-4xl md:text-5xl font-bold text-white mb-2">2+</span>
                         <span className="text-gray-500 text-[10px] md:text-xs font-bold tracking-widest uppercase text-nowrap">Years Exp</span>
                     </div>
                     <div className="flex flex-col items-center justify-center p-4">

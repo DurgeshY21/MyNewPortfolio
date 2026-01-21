@@ -22,7 +22,7 @@ const Home = () => {
                     {/* Main Heading */}
                     <div className="space-y-1 flex flex-col items-start">
                         <h1 className="text-4xl md:text-8xl font-black text-white tracking-tight leading-[0.9]">
-                            EXPERT
+                            REACT
                         </h1>
                         <h1 className="text-4xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 tracking-tight leading-[0.9]">
                             FRONTEND
@@ -34,7 +34,7 @@ const Home = () => {
 
                     {/* Description */}
                     <p className="text-gray-400 text-sm md:text-lg max-w-lg leading-relaxed text-left">
-                        Crafting sophisticated, responsive, and high-performance user interfaces with a focus on modern web standards and exceptional user experience.
+                        Crafting well-designed, responsive, and high-performance user interfaces with a focus on modern web standards and exceptional user experience.
                     </p>
 
                     {/* Buttons */}
