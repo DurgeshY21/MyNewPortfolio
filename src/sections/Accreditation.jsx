@@ -2,7 +2,7 @@ import React from 'react';
 
 const Accreditation = () => {
     return (
-        <section id="accreditation" className="relative w-full py-20 md:px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+        <section id="accreditation" className="space-grotesk-font relative w-full py-20 md:px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
 
             {/* Left Content */}
             <div className="flex-1 flex flex-col items-start space-y-8">

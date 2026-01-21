@@ -2,7 +2,7 @@ import React from 'react';
 
 const CTA = () => {
     return (
-        <section className="relative w-full py-24 md:px-6 overflow-hidden">
+        <section className="relative w-full py-24 md:px-6 overflow-hidden space-grotesk-font">
             {/* Background Glow Effects */}
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px] -z-10"></div>
             <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[100px] -z-10"></div>

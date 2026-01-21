@@ -3,7 +3,7 @@ import Pic from '../assets/PIC.jpeg';
 
 const Home = () => {
     return (
-        <section id="home" className="relative w-full min-h-screen flex items-center justify-center pt-0 md:px-6 max-w-7xl mx-auto overflow-hidden">
+        <section id="home" className="relative space-grotesk-font w-full min-h-screen flex items-center justify-center pt-0 md:px-6 max-w-7xl mx-auto overflow-hidden">
 
             {/* Content Wrapper */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">

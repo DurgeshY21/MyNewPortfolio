@@ -55,7 +55,7 @@ const About = () => {
     ];
 
     return (
-        <section id="about" className="relative w-full py-20 md:px-6 max-w-7xl mx-auto flex flex-col items-start min-h-screen justify-center">
+        <section id="about" className="relative space-grotesk-font w-full py-20 md:px-6 max-w-7xl mx-auto flex flex-col items-start min-h-screen justify-center">
 
             {/* Header Section - Left Aligned */}
             <div className="flex flex-col items-center mb-16 space-y-4 text-center w-full">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const GetInTouch = () => {
     return (
-        <section id="contact" className="relative w-full pt-20 px-4 md:px-12 max-w-7xl mx-auto flex flex-col justify-between min-h-[90vh] overflow-hidden">
+        <section id="contact" className="space-grotesk-font relative w-full pt-20 px-4 md:px-12 max-w-7xl mx-auto flex flex-col justify-between min-h-[90vh] overflow-hidden">
 
             {/* Kinetic Background */}
             <div className="absolute inset-0 pointer-events-none z-0">

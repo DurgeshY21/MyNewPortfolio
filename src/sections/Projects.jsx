@@ -23,7 +23,7 @@ const Projects = () => {
     ];
 
     return (
-        <section id="projects" className="relative w-full py-32 md:px-6 max-w-[1400px] mx-auto flex flex-col items-center">
+        <section id="projects" className="relative w-full py-32 md:px-6 max-w-[1400px] mx-auto flex flex-col items-center space-grotesk-font">
 
             {/* Section Header */}
            <div className="flex items-end gap-2 pb-20">

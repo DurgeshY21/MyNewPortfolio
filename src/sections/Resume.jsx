@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume = () => {
     return (
-        <section id="resume" className="w-full py-16 md:px-6 max-w-7xl mx-auto">
+        <section id="resume" className="w-full py-16 md:px-6 max-w-7xl mx-auto space-grotesk-font">
             {/* Main Card Container */}
             <div className="relative w-full bg-[#0B0E14] rounded-[2rem] p-6 md:p-16 overflow-hidden border border-white/5 group">
 
