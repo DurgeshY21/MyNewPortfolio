@@ -1,4 +1,5 @@
 import React from 'react';
+import Reveal from '../components/Reveal';
 
 const GetInTouch = () => {
     return (
@@ -14,45 +15,53 @@ const GetInTouch = () => {
 
                 {/* Header - Subtle */}
                 <div className="text-center">
-                    <h2 className="text-xs md:text-base font-bold text-gray-400 tracking-[0.5em] uppercase mb-4">
-                        Is it me you're looking for?
-                    </h2>
-                    <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mix-blend-overlay opacity-80 select-none">
-                        Get In Touch
-                    </h2>
+                    <Reveal width="100%">
+                        <h2 className="text-xs md:text-base font-bold text-gray-400 tracking-[0.5em] uppercase mb-4 text-center">
+                            Is it me you're looking for?
+                        </h2>
+                    </Reveal>
+                    <Reveal width="100%" delay={0.2}>
+                        <h2 className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter mix-blend-overlay opacity-80 select-none text-center">
+                            Get In Touch
+                        </h2>
+                    </Reveal>
                 </div>
 
                 {/* Massive Interactive Links */}
                 <div className="flex flex-row items-center justify-center gap-6 md:gap-32 w-full mt-4 md:mt-0">
 
                     {/* Email Item */}
-                    <div className="group relative text-center cursor-pointer">
-                        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/5 to-blue-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
-                        <h3 className="text-lg md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300 ease-out transform group-hover:scale-105">
-                            EMAIL
-                        </h3>
-                        <div className="w-max mx-auto">
-                            <a href="mailto:durgesh.yadav@example.com" className="text-xs md:text-xl font-medium text-gray-300 hover:text-white tracking-wide mt-2 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
-                                durgeshy5226@gmail.com
-                            </a>
+                    <Reveal delay={0.4}>
+                        <div className="group relative text-center cursor-pointer">
+                            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/5 to-blue-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+                            <h3 className="text-lg md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-blue-400 group-hover:to-cyan-300 transition-all duration-300 ease-out transform group-hover:scale-105">
+                                EMAIL
+                            </h3>
+                            <div className="w-max mx-auto">
+                                <a href="mailto:durgesh.yadav@example.com" className="text-xs md:text-xl font-medium text-gray-300 hover:text-white tracking-wide mt-2 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
+                                    durgeshy5226@gmail.com
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </Reveal>
 
                     {/* Divider (Optional, visual separation) */}
                     <div className="hidden md:block w-px h-32 bg-gradient-to-b from-transparent via-gray-700/50 to-transparent"></div>
 
                     {/* Call Item */}
-                    <div className="group relative text-center cursor-pointer">
-                        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/5 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
-                        <h3 className="text-lg md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-purple-400 group-hover:to-pink-300 transition-all duration-300 ease-out transform group-hover:scale-105">
-                            CALL
-                        </h3>
-                        <div className="w-max mx-auto">
-                            <a href="tel:+916306495920" className="text-xs md:text-xl font-medium text-gray-300 hover:text-white tracking-wide mt-2 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
-                                +91 6306495920
-                            </a>
+                    <Reveal delay={0.6}>
+                        <div className="group relative text-center cursor-pointer">
+                            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/5 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+                            <h3 className="text-lg md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 group-hover:from-purple-400 group-hover:to-pink-300 transition-all duration-300 ease-out transform group-hover:scale-105">
+                                CALL
+                            </h3>
+                            <div className="w-max mx-auto">
+                                <a href="tel:+916306495920" className="text-xs md:text-xl font-medium text-gray-300 hover:text-white tracking-wide mt-2 inline-block border-b border-gray-600 hover:border-white pb-1 transition-colors">
+                                    +91 6306495920
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </Reveal>
 
                 </div>
             </div>

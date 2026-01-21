@@ -1,4 +1,5 @@
 import React from 'react';
+import Reveal from '../components/Reveal';
 
 const About = () => {
     const skills = [
@@ -17,7 +18,7 @@ const About = () => {
                     <path fillRule="evenodd" d="M3.087 9l.54 9.176A3 3 0 006.62 21h10.757a3 3 0 002.995-2.824L20.913 9H3.087zm6.163 3.75A.75.75 0 0110 12h4a.75.75 0 010 1.5h-4a.75.75 0 01-.75-.75z" clipRule="evenodd" />
                 </svg>
             ),
-             text: "Passionate about UI/UX design, performance optimization, and building accessible, high-quality applications."
+            text: "Passionate about UI/UX design, performance optimization, and building accessible, high-quality applications."
         },
         {
             icon: (
@@ -27,7 +28,7 @@ const About = () => {
             ),
             text: "Specialized in React.js, Next.js, TypeScript, and modern state management tools like Redux and Zustand."
         },
-          {
+        {
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-yellow-400">
                     <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
@@ -59,21 +60,25 @@ const About = () => {
 
             {/* Header Section - Left Aligned */}
             <div className="flex flex-col items-center mb-16 space-y-4 text-center w-full">
-                <div className="flex items-end gap-4">
-                    <h2 className="text-5xl md:text-7xl font-black text-transparent select-none leading-none "
-                        style={{ WebkitTextStroke: '2px #3b82f6' }}>
-                        02
-                    </h2>
-                    <div className="flex flex-col">
-                        <h2 className="text-3xl md:text-6xl text-white uppercase whitespace-nowrap font-black ">
-                            ABOUT ME
+                <Reveal>
+                    <div className="flex items-end gap-4">
+                        <h2 className="text-5xl md:text-7xl font-black text-transparent select-none leading-none "
+                            style={{ WebkitTextStroke: '2px #3b82f6' }}>
+                            02
                         </h2>
-                        <span className="block h-1 w-full bg-blue-600 mt-1 rounded-full"></span>
+                        <div className="flex flex-col">
+                            <h2 className="text-3xl md:text-6xl text-white uppercase whitespace-nowrap font-black ">
+                                ABOUT ME
+                            </h2>
+                            <span className="block h-1 w-full bg-blue-600 mt-1 rounded-full"></span>
+                        </div>
                     </div>
-                </div>
-                <p className="text-gray-400 text-sm md:text-xl max-w-2xl font-light pl-2">
-                    Experienced Frontend Developer, passionate about building high-quality web applications.
-                </p>
+                </Reveal>
+                <Reveal delay={0.1}>
+                    <p className="text-gray-400 text-sm md:text-xl max-w-2xl font-light pl-2">
+                        Experienced Frontend Developer, passionate about building high-quality web applications.
+                    </p>
+                </Reveal>
             </div>
 
             {/* Main Grid Layout - 2 Columns */}
@@ -85,63 +90,65 @@ const About = () => {
                 </div>
 
                 {/* Right Column - Content Card */}
-                <div className="w-full bg-[#111620] border border-gray-800 rounded-2xl md:rounded-[2.5rem] p-4 md:p-8 shadow-2xl relative overflow-hidden">
-                    {/* Glow effect */}
-                    <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-blue-600/10 rounded-full blur-[80px] -z-0"></div>
+                <Reveal delay={0.3} width='100%'>
+                    <div className="w-full bg-[#111620] border border-gray-800 rounded-2xl md:rounded-[2.5rem] p-4 md:p-8 shadow-2xl relative overflow-hidden">
+                        {/* Glow effect */}
+                        <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-blue-600/10 rounded-full blur-[80px] -z-0"></div>
 
-                    <div className="relative z-10 flex flex-col gap-8">
+                        <div className="relative z-10 flex flex-col gap-8">
 
-                        {/* Card Header */}
-                        <div>
-                            <h3 className="text-lg md:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 tracking-wide uppercase mb-2 text-start ">
-                                Durgesh Yadav <span className="">(Frontend Developer)</span>
-                            </h3>
-                            <p className="text-xs md:text-sm font-semibold text-gray-500 tracking-widest uppercase mb-6 text-start">
-                                2+ Years of Experience
-                            </p>
-                            <div className="h-px w-full bg-gray-800"></div>
-                        </div>
+                            {/* Card Header */}
+                            <div>
+                                <h3 className="text-lg md:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 tracking-wide uppercase mb-2 text-start ">
+                                    Durgesh Yadav <span className="">(Frontend Developer)</span>
+                                </h3>
+                                <p className="text-xs md:text-sm font-semibold text-gray-500 tracking-widest uppercase mb-6 text-start">
+                                    2+ Years of Experience
+                                </p>
+                                <div className="h-px w-full bg-gray-800"></div>
+                            </div>
 
-                        {/* Skills List */}
-                        <div className="space-y-6">
-                            {skills.map((item, index) => (
-                                <div key={index} className="flex gap-4 items-start group">
-                                    <div className="mt-1 p-1.5 rounded-lg bg-gray-800/50 group-hover:bg-blue-500/10 transition-colors">
-                                        {item.icon}
+                            {/* Skills List */}
+                            <div className="space-y-6">
+                                {skills.map((item, index) => (
+                                    <div key={index} className="flex gap-4 items-start group">
+                                        <div className="mt-1 p-1.5 rounded-lg bg-gray-800/50 group-hover:bg-blue-500/10 transition-colors">
+                                            {item.icon}
+                                        </div>
+                                        <p className="text-gray-300 text-xs md:text-[15px] leading-relaxed text-start">
+                                            {item.text}
+                                        </p>
                                     </div>
-                                    <p className="text-gray-300 text-xs md:text-[15px] leading-relaxed text-start">
-                                        {item.text}
-                                    </p>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
+
+                            {/* Divider */}
+                            <div className="h-px w-full bg-gray-800 my-2"></div>
+
+                            {/* Contact Info */}
+                            <div className="flex flex-col md:flex-row gap-4 md:gap-12">
+                                <a href="tel:+919478629522" className="flex items-center gap-3 text-white hover:text-blue-400 transition-colors group">
+                                    <div className="p-2 rounded-full bg-blue-600/10 group-hover:bg-blue-600/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-500">
+                                            <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <span className="font-medium text-center text-xs md:text-[15px] text-nowrap">+91 6306495920</span>
+                                </a>
+                                <a href="mailto:durgesh.yadav@example.com" className="flex items-center gap-3 text-white hover:text-blue-400 transition-colors group">
+                                    <div className="p-2 rounded-full bg-blue-600/10 group-hover:bg-blue-600/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-500">
+                                            <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                            <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                                        </svg>
+                                    </div>
+                                    <span className="font-medium text-xs md:text-[15px]">durgeshy5226@gmail.com</span>
+                                </a>
+                            </div>
+
                         </div>
-
-                        {/* Divider */}
-                        <div className="h-px w-full bg-gray-800 my-2"></div>
-
-                        {/* Contact Info */}
-                        <div className="flex flex-col md:flex-row gap-4 md:gap-12">
-                            <a href="tel:+919478629522" className="flex items-center gap-3 text-white hover:text-blue-400 transition-colors group">
-                                <div className="p-2 rounded-full bg-blue-600/10 group-hover:bg-blue-600/20">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-500">
-                                        <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
-                                    </svg>
-                                </div>
-                                <span className="font-medium text-center text-xs md:text-[15px] text-nowrap">+91 6306495920</span>
-                            </a>
-                            <a href="mailto:durgesh.yadav@example.com" className="flex items-center gap-3 text-white hover:text-blue-400 transition-colors group">
-                                <div className="p-2 rounded-full bg-blue-600/10 group-hover:bg-blue-600/20">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-500">
-                                        <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-                                        <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-                                    </svg>
-                                </div>
-                                <span className="font-medium text-xs md:text-[15px]">durgeshy5226@gmail.com</span>
-                            </a>
-                        </div>
-
                     </div>
-                </div>
+                </Reveal>
 
             </div>
 
