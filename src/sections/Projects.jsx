@@ -21,7 +21,7 @@ const Projects = () => {
             title: "POXSCAN EXPLORER",
             category: "BLOCKCHAIN / WEB3",
             description: "A comprehensive blockchain explorer tailored for the PoxScan network, featuring real-time transaction tracking, block visualization, and validator metrics.",
-            tags: ["REACT.JS", "REDUX", "TAILWIND"],
+            tags: ["REACT.JS", "SOCKET.IO", "REACT QUERY"],
             image: projectsThree,
             link: "/case-study/poxscan"
         },
@@ -30,7 +30,7 @@ const Projects = () => {
             title: "DEX SWAP INTERFACE",
             category: "DEFI / TRADING",
             description: "A high-performance decentralized exchange interface offering seamless token swaps, liquidity pool management, and real-time market charts.",
-            tags: ["NEXT.JS", "WEB3", "ETHERS"],
+            tags: ["REACT.JS", "SOCKET.IO", "ETHER.JS", "THIRDWEB"],
             image: projectsFour,
             link: "/case-study/dex"
         },

@@ -9,6 +9,7 @@ const Navbar = () => {
       <div className="absolute inset-0 bg-[#0B0E14]/80 backdrop-blur-md -z-10"></div>
 
       {/* Logo */}
+      <a href="/">
       <div className="flex items-center gap-2 z-50">
         <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-white">
@@ -19,7 +20,7 @@ const Navbar = () => {
           DURGESH <span className="text-blue-500">YADAV</span>
         </span>
       </div>
-
+      </a>
       {/* Desktop Navigation Links */}
       <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300 z-50">
         <li><a href="#home" className="hover:text-white transition-colors text-white">Home</a></li>
