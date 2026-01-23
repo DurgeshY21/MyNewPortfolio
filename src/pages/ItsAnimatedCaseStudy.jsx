@@ -49,7 +49,7 @@ const ItsAnimatedCaseStudy = () => {
 
                     <Reveal width="100%">
                         <div className="pt-8 flex justify-center">
-                            <a href="#" className="group relative inline-flex items-center gap-3 px-8 py-4 bg-blue-600/10 hover:bg-blue-600 text-blue-400 hover:text-white font-bold rounded-full transition-all duration-300 border border-blue-500/30 hover:border-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
+                            <a href="https://itsanimated.netlify.app/" className="group relative inline-flex items-center gap-3 px-8 py-4 bg-blue-600/10 hover:bg-blue-600 text-blue-400 hover:text-white font-bold rounded-full transition-all duration-300 border border-blue-500/30 hover:border-blue-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
                                 <Sparkles className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                                 <span className="tracking-widest uppercase text-sm">Explore Library</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4 group-hover:translate-x-1 transition-transform">
