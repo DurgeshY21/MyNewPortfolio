@@ -32,12 +32,12 @@ const PoxScanCaseStudy = () => {
                 <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-900/10 rounded-full blur-[120px]"></div>
             </div>
 
-            <main className="pt-32 pb-20 px-6 max-w-[1100px] mx-auto space-grotesk-font relative z-10">
+            <main className="pt-12 md:pt-32 pb-20 md:px-6 max-w-[1100px] mx-auto space-grotesk-font relative z-10">
 
                 {/* Header Section */}
-                <div className="text-center mb-20 space-y-8">
+                <div className="text-center mb-12 md:mb-20 space-y-6 md:space-y-8">
                     <Reveal width="100%">
-                        <h1 className="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-600 mb-6 drop-shadow-2xl">
+                        <h1 className="text-4xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-600 mb-6 drop-shadow-2xl">
                             PoxScan Explorer
                         </h1>
                     </Reveal>
@@ -63,14 +63,14 @@ const PoxScanCaseStudy = () => {
 
                 {/* Hero Image */}
                 <Reveal width="100%">
-                    <div className="mb-24 rounded-[2rem] overflow-hidden border border-gray-800/50 bg-[#111620]/50 backdrop-blur-sm shadow-2xl relative group">
+                    <div className="mb-12 md:mb-24 rounded-[2rem] overflow-hidden border border-gray-800/50 bg-[#111620]/50 backdrop-blur-sm shadow-2xl relative group">
                         <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay"></div>
                         <img src={poxscanImage} alt="PoxScan Explorer Hero" className="w-full h-auto transform transition-transform duration-1000 group-hover:scale-[1.02]" />
                     </div>
                 </Reveal>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-24">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-24">
                     {[
                         { label: "TYPE", value: "Blockchain Explorer", icon: <Globe className="w-6 h-6 text-blue-400" /> },
                         { label: "CATEGORY", value: "Web3 / Infrastructure", icon: <Server className="w-6 h-6 text-blue-400" /> },
@@ -90,33 +90,33 @@ const PoxScanCaseStudy = () => {
                 </div>
 
                 {/* Content Sections */}
-                <div className="space-y-24">
+                <div className="space-y-12 md:space-y-24">
 
                     {/* Overview */}
                     <Reveal width="100%">
-                        <section className="bg-gradient-to-br from-[#111620] to-[#0B0E14] p-8 md:p-12 rounded-[2.5rem] border border-gray-800/50 relative overflow-hidden">
+                        <section className="bg-gradient-to-br from-[#111620] to-[#0B0E14] p-4 md:p-12 rounded-[2rem] md:rounded-[2.5rem] border border-gray-800/50 relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-[80px]"></div>
 
-                            <h2 className="text-3xl md:text-5xl font-bold mb-8 flex items-center gap-4 relative z-10">
-                                <Search className="w-8 h-8 md:w-10 md:h-10 text-blue-400" />
-                                <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">Navigating the Blockchain</span>
+                            <h2 className="text-lg md:text-5xl font-bold mb-8 flex items-center gap-2 md:gap-4 relative z-10">
+                                <Search className="w-6 h-6 md:w-10 md:h-10 text-blue-400" />
+                                <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 text-nowrap">Navigating the Blockchain</span>
                             </h2>
 
                             <div className="grid md:grid-cols-2 gap-12 text-gray-400 leading-relaxed font-light text-lg relative z-10 text-left">
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                                        <span className="w-2 h-8 bg-blue-500 rounded-full"></span> Overview
+                                    <h3 className="text-lg md:text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                        <span className="w-1.5 md:w-2 h-6 md:h-8 bg-blue-500 rounded-full"></span> Overview
                                     </h3>
-                                    <p className="mb-6">
-                                        <strong className="text-white">PoxScan Explorer</strong> serves as the window into the PoxScan network. It demystifies complex blockchain data, translating raw hashes and hex code into readable, actionable insights for users and developers alike.
+                                    <p className="mb-6 text-sm md:text-[17px]">
+                                        <strong className="text-white text-sm md:text-[17px]">PoxScan Explorer</strong> serves as the window into the PoxScan network. It demystifies complex blockchain data, translating raw hashes and hex code into readable, actionable insights for users and developers alike.
                                     </p>
-                                    <p>
+                                    <p className='text-sm md:text-[17px]'>
                                         My role was to architect a frontend that could handle the high velocity of a live blockchain without compromising on speed or usability.
                                     </p>
                                 </div>
 
-                                <div className="bg-[#0B0E14]/50 p-8 rounded-2xl border border-gray-800/30">
-                                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                                <div className="bg-[#0B0E14]/50 p-2 md:p-8 rounded-2xl border border-gray-800/30">
+                                    <h3 className="text-lg md:text-xl font-bold text-white mb-4 flex items-center gap-2">
                                         <Cpu className="w-6 h-6 text-blue-400" /> Tech Stack
                                     </h3>
                                     <ul className="space-y-3">
@@ -129,8 +129,8 @@ const PoxScanCaseStudy = () => {
                                             { name: "REST API", desc: "Data Fetching Layer" }
                                         ].map((item, i) => (
                                             <li key={i} className="flex items-center justify-between border-b border-gray-800 pb-2 last:border-0 last:pb-0">
-                                                <span className="text-white font-medium">{item.name}</span>
-                                                <span className="text-xs text-gray-500 uppercase tracking-wider">{item.desc}</span>
+                                                <span className="text-white font-medium text-sm md:text-[16px]">{item.name}</span>
+                                                <span className="text-[10px] md:text-xs text-gray-500 uppercase tracking-wider">{item.desc}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -142,24 +142,24 @@ const PoxScanCaseStudy = () => {
                     {/* Features & Role */}
                     <div className="grid md:grid-cols-2 gap-8">
                         <Reveal width="100%">
-                            <div className="h-full bg-[#111620]/30 p-10 rounded-[2.5rem] border border-gray-800/30 hover:border-blue-500/30 transition-colors text-left">
-                                <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-                                    <Layout className="w-8 h-8 text-blue-400" /> My Role
+                            <div className="h-full bg-[#111620]/30 p-4 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border border-gray-800/30 hover:border-blue-500/30 transition-colors text-left">
+                                <h3 className="text-xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3">
+                                    <Layout className="w-6 md:w-8 h-6 md:h-8 text-blue-400" /> My Role
                                 </h3>
-                                <p className="text-gray-400 text-lg leading-relaxed mb-6">
+                                <p className="text-gray-400 text-sm md:text-lg leading-relaxed mb-6">
                                     I worked as the <strong className="text-white">Frontend Developer</strong>, focusing on performance optimizations for large datasets.
                                 </p>
                                 <ul className="space-y-4 text-gray-400">
                                     <li className="flex gap-4">
-                                        <span className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-sm font-bold mt-1">1</span>
+                                        <span className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs md:text-sm font-bold mt-1">1</span>
                                         <span>Designed re-usable data table components with virtualization.</span>
                                     </li>
                                     <li className="flex gap-4">
-                                        <span className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-sm font-bold mt-1">2</span>
+                                        <span className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs md:text-sm font-bold mt-1">2</span>
                                         <span>Implemented real-time WebSocket connections for live block feeds.</span>
                                     </li>
                                     <li className="flex gap-4">
-                                        <span className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-sm font-bold mt-1">3</span>
+                                        <span className="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-xs md:text-sm font-bold mt-1">3</span>
                                         <span>Collaborated with backend engineers to optimize API response structures.</span>
                                     </li>
                                 </ul>
@@ -167,9 +167,9 @@ const PoxScanCaseStudy = () => {
                         </Reveal>
 
                         <Reveal width="100%" delay={0.2}>
-                            <div className="h-full bg-[#111620]/30 p-10 rounded-[2.5rem] border border-gray-800/30 hover:border-blue-500/30 transition-colors">
-                                <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
-                                    <Key className="w-8 h-8 text-blue-400" /> Key Features
+                            <div className="h-full bg-[#111620]/30 p-4 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border border-gray-800/30 hover:border-blue-500/30 transition-colors">
+                                <h3 className="text-xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3">
+                                    <Key className="w-6 md:w-8 h-6 md:h-8 text-blue-400" /> Key Features
                                 </h3>
                                 <div className="space-y-3">
                                     {[
@@ -181,7 +181,7 @@ const PoxScanCaseStudy = () => {
                                     ].map((feature, i) => (
                                         <div key={i} className="group flex items-center gap-4 p-4 rounded-xl bg-[#0B0E14] border border-gray-800 hover:border-blue-500/50 transition-all cursor-default">
                                             <CheckCircle2 className="w-5 h-5 text-blue-500 group-hover:scale-125 transition-transform" />
-                                            <span className="text-gray-300 font-medium">{feature}</span>
+                                            <span className="text-gray-300 font-medium text-start text-sm md:text-[17px]">{feature}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -219,12 +219,12 @@ const PoxScanCaseStudy = () => {
 
                     {/* Outcome */}
                     <Reveal width="100%">
-                        <div className="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 p-10 md:p-16 rounded-[3rem] border border-blue-500/20 text-center relative overflow-hidden">
+                        <div className="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 p-8 md:p-16 rounded-[2rem] md:rounded-[3rem] border border-blue-500/20 text-center relative overflow-hidden">
                             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
 
-                            <Rocket className="w-16 h-16 md:w-20 md:h-20 text-blue-400 mx-auto mb-6" />
-                            <h3 className="text-4xl font-black text-white mb-6">Project Outcome</h3>
-                            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-10">
+                            <Rocket className="w-8 h-8 md:w-20 md:h-20 text-blue-400 mx-auto mb-6" />
+                            <h3 className="text-3xl md:text-4xl font-black text-white mb-6">Project Outcome</h3>
+                            <p className="text-sm md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-10">
                                 PoxScan Explorer allows <span className="text-white font-bold">thousands of users</span> to verify transactions daily with <span className="text-blue-400">99.9% uptime</span>. It has become the trusted source of truth for the entire ecosystem.
                             </p>
 
