@@ -37,7 +37,6 @@ const Reveal = ({ children, width = 'fit-content', delay = 0, className = '' }) 
                     transform: isVisible ? 'translateY(0)' : 'translateY(75px)',
                     opacity: isVisible ? 1 : 0,
                     transition: `all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) ${delay}s`,
-                    pointerEvents: isVisible ? 'auto' : 'none',
                 }}
             >
                 {children}

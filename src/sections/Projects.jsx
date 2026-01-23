@@ -2,6 +2,7 @@ import React from 'react';
 import projectsThree from '../assets/poxscan.png';
 import projectsFour from '../assets/dex.png';
 import Reveal from '../components/Reveal';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const projects = [
@@ -11,7 +12,8 @@ const Projects = () => {
             category: "BLOCKCHAIN / WEB3",
             description: "A comprehensive blockchain explorer tailored for the PoxScan network, featuring real-time transaction tracking, block visualization, and validator metrics.",
             tags: ["REACT.JS", "REDUX", "TAILWIND"],
-            image: projectsThree
+            image: projectsThree,
+            link: "/case-study/poxscan"
         },
         {
             id: 2,
@@ -19,8 +21,10 @@ const Projects = () => {
             category: "DEFI / TRADING",
             description: "A high-performance decentralized exchange interface offering seamless token swaps, liquidity pool management, and real-time market charts.",
             tags: ["NEXT.JS", "WEB3", "ETHERS"],
-            image: projectsFour
-        }
+            image: projectsFour,
+            link: "/case-study/dex"
+        },
+
     ];
 
     return (
@@ -90,14 +94,25 @@ const Projects = () => {
                                 </div>
 
                                 <div className="pt-2">
-                                    <button className="group relative px-8 py-3 bg-white text-black text-xs md:text-sm font-bold uppercase tracking-wider rounded-full overflow-hidden hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                                        <span className="relative z-10 flex items-center gap-2">
-                                            View Case Study
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 group-hover:translate-x-1 transition-transform">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                                            </svg>
-                                        </span>
-                                    </button>
+                                    {project.link ? (
+                                        <Link to={project.link} className="group relative inline-flex items-center gap-2 px-8 py-3 bg-white text-black text-xs md:text-sm font-bold uppercase tracking-wider rounded-full overflow-hidden hover:bg-blue-500 hover:text-white transition-colors duration-300">
+                                            <span className="relative z-10 flex items-center gap-2">
+                                                View Case Study
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 group-hover:translate-x-1 transition-transform">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </span>
+                                        </Link>
+                                    ) : (
+                                        <button className="group relative px-8 py-3 bg-white text-black text-xs md:text-sm font-bold uppercase tracking-wider rounded-full overflow-hidden hover:bg-blue-500 hover:text-white transition-colors duration-300">
+                                            <span className="relative z-10 flex items-center gap-2">
+                                                View Case Study
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 group-hover:translate-x-1 transition-transform">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    )}
                                 </div>
 
                             </div>

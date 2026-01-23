@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './sections/Home';
 import About from './sections/About';
@@ -10,25 +11,39 @@ import Services from './sections/Services';
 import Projects from './sections/Projects';
 import GetInTouch from './sections/GetInTouch';
 import CTA from './sections/CTA';
+import ScrollToTop from './components/ScrollToTop';
+import PoxScanCaseStudy from './pages/PoxScanCaseStudy';
+import DexCaseStudy from './pages/DexCaseStudy';
 import './App.css';
+
+const MainLayout = () => (
+  <div className="App">
+    <Navbar />
+    <main>
+      <Home />
+      <About />
+      <Resume />
+      <Journey />
+      <Accreditation />
+      <Skills />
+      <Services />
+      <Projects />
+      <CTA />
+      <GetInTouch />
+    </main>
+  </div>
+);
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <main>
-        <Home />
-        <About />
-        <Resume />
-        <Journey />
-        <Accreditation />
-        <Skills />
-        <Services />
-        <Projects />
-        <CTA />
-        <GetInTouch />
-      </main>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<MainLayout />} />
+        <Route path="/case-study/poxscan" element={<PoxScanCaseStudy />} />
+        <Route path="/case-study/dex" element={<DexCaseStudy />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
