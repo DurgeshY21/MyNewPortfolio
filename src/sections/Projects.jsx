@@ -1,6 +1,7 @@
 import React from 'react';
 import projectsThree from '../assets/poxscan.png';
 import projectsFour from '../assets/dex.png';
+import itsAnimatedImage from '../assets/itsAnimated.png';
 import Reveal from '../components/Reveal';
 import { Link } from 'react-router-dom';
 
@@ -8,6 +9,15 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
+            title: "ITS ANIMATED",
+            category: "UI LIBRARY / DEV TOOLS",
+            description: "A comprehensive library of animated icons, inputs, and interactive components. Built with React, TypeScript, and Tailwind CSS to help developers build beautiful interfaces faster.",
+            tags: ["REACT.JS", "TYPESCRIPT", "TAILWIND"],
+            image: itsAnimatedImage,
+            link: "/case-study/its-animated"
+        },
+        {
+            id: 2,
             title: "POXSCAN EXPLORER",
             category: "BLOCKCHAIN / WEB3",
             description: "A comprehensive blockchain explorer tailored for the PoxScan network, featuring real-time transaction tracking, block visualization, and validator metrics.",
@@ -16,7 +26,7 @@ const Projects = () => {
             link: "/case-study/poxscan"
         },
         {
-            id: 2,
+            id: 3,
             title: "DEX SWAP INTERFACE",
             category: "DEFI / TRADING",
             description: "A high-performance decentralized exchange interface offering seamless token swaps, liquidity pool management, and real-time market charts.",

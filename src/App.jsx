@@ -14,6 +14,7 @@ import CTA from './sections/CTA';
 import ScrollToTop from './components/ScrollToTop';
 import PoxScanCaseStudy from './pages/PoxScanCaseStudy';
 import DexCaseStudy from './pages/DexCaseStudy';
+import ItsAnimatedCaseStudy from './pages/ItsAnimatedCaseStudy';
 import './App.css';
 
 const MainLayout = () => (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/" element={<MainLayout />} />
         <Route path="/case-study/poxscan" element={<PoxScanCaseStudy />} />
         <Route path="/case-study/dex" element={<DexCaseStudy />} />
+        <Route path="/case-study/its-animated" element={<ItsAnimatedCaseStudy />} />
       </Routes>
     </BrowserRouter>
   );
