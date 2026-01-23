@@ -1,5 +1,6 @@
 import React from 'react';
 import Reveal from '../components/Reveal';
+import myPic from '../assets/Mypic.png';
 
 const About = () => {
     const skills = [
@@ -85,8 +86,27 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
 
                 {/* Left Column - Empty Space for Future Image */}
-                <div className="flex items-center justify-center min-h-[400px]">
-                    {/* Placeholder or empty space */}
+                <div className="flex items-start justify-center h-full">
+                    <Reveal delay={0.2}>
+                        <div className="relative group">
+
+                            {/* Abstract Background Blur */}
+                            <div className="absolute inset-0 bg-blue-600/20 blur-[60px] rounded-full animate-pulse -z-10"></div>
+
+                            {/* Main Image Container - Rectangular/Rounded as "Usual" */}
+                            <div className="relative overflow-hidden rounded-[2rem] border border-gray-800/50 shadow-2xl bg-[#0B0E14]">
+
+                                {/* Inner Hover Shine */}
+                                <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+
+                                <img
+                                    src={myPic}
+                                    alt="Durgesh Yadav"
+                                    className="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700 block"
+                                />
+                            </div>
+                        </div>
+                    </Reveal>
                 </div>
 
                 {/* Right Column - Content Card */}
@@ -149,8 +169,7 @@ const About = () => {
                         </div>
                     </div>
                 </Reveal>
-
-            </div>
+             </div>
 
         </section>
     );
