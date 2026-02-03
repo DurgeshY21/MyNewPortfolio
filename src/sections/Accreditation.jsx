@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Reveal from '../components/Reveal';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import C1 from '../assets/C1.png';
 import C2 from '../assets/C2.jpg';
 import C3 from '../assets/C3.jpg';
 import C4 from '../assets/C4.jpg';
 
+const certificates = [C1, C2, C3, C4];
+
 const Accreditation = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    // Auto-play logic
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveIndex((current) => (current === certificates.length - 1 ? 0 : current + 1));
+        }, 5000); // Change slide every 5 seconds
+
+        return () => clearInterval(interval);
+    }, []);
+
+    const nextSlide = () => {
+        setActiveIndex((current) => (current === certificates.length - 1 ? 0 : current + 1));
+    };
+
+    const prevSlide = () => {
+        setActiveIndex((current) => (current === 0 ? certificates.length - 1 : current - 1));
+    };
+
     return (
         <section id="accreditation" className="space-grotesk-font relative w-full py-20 md:px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
 
@@ -80,25 +102,69 @@ const Accreditation = () => {
 
             </div>
 
-            {/* Right Content - Certificate Grid */}
+            {/* Right Content - Certificate Carousel */}
             <div className="flex-1 w-full max-w-xl">
                 <Reveal delay={0.5} width='100%'>
-                    <div className="grid grid-cols-2 gap-4 md:gap-6 w-full">
-                        {[C1, C2, C3, C4].map((cert, index) => (
-                            <div key={index} className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:z-10 hover:shadow-2xl border border-white/10 bg-gray-900/50">
-                                {/* Glass sheen effect */}
-                                <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                    <div className="relative group w-full aspect-[4/3] bg-gray-900/50 rounded-xl md:rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
 
-                                <img
-                                    src={cert}
-                                    alt={`Certificate ${index + 1}`}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        {/* Main Image */}
+                        <div className="w-full h-full relative">
+                            {certificates.map((cert, index) => (
+                                <div
+                                    key={index}
+                                    className={`absolute inset-0 w-full h-full transition-all duration-700 ease-in-out transform ${index === activeIndex
+                                            ? 'opacity-100 translate-x-0 scale-100'
+                                            : index < activeIndex
+                                                ? 'opacity-0 -translate-x-full scale-95'
+                                                : 'opacity-0 translate-x-full scale-95'
+                                        }`}
+                                >
+                                    <img
+                                        src={cert}
+                                        alt={`Certificate ${index + 1}`}
+                                        className="w-full h-full object-cover"
+                                    />
+                                    {/* Overlay Gradient */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent opacity-60"></div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Navigation Buttons */}
+                        <button
+                            onClick={prevSlide}
+                            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 p-2 md:p-3 rounded-full bg-black/40 text-white backdrop-blur-sm border border-white/10 opacity-0 group-hover:opacity-100 transition-all hover:bg-blue-600 hover:scale-110 z-20 cursor-pointer"
+                        >
+                            <ChevronLeft size={24} />
+                        </button>
+                        <button
+                            onClick={nextSlide}
+                            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 p-2 md:p-3 rounded-full bg-black/40 text-white backdrop-blur-sm border border-white/10 opacity-0 group-hover:opacity-100 transition-all hover:bg-blue-600 hover:scale-110 z-20 cursor-pointer"
+                        >
+                            <ChevronRight size={24} />
+                        </button>
+
+                        {/* Dot Indicators */}
+                        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 md:gap-3 z-20">
+                            {certificates.map((_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setActiveIndex(index)}
+                                    className={`h-1.5 md:h-2 rounded-full transition-all duration-500 cursor-pointer ${index === activeIndex
+                                            ? 'w-6 md:w-8 bg-blue-500 shadow-[0_0_10px_2px_rgba(59,130,246,0.5)]'
+                                            : 'w-1.5 md:w-2 bg-gray-500/50 hover:bg-gray-400'
+                                        }`}
                                 />
+                            ))}
+                        </div>
 
-                                {/* Overlay on hover */}
-                                <div className="absolute inset-0 bg-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                            </div>
-                        ))}
+                        {/* Certificate Info Overlay */}
+                        <div className="absolute bottom-8 md:bottom-12 left-6 md:left-8 z-10 transform transition-all duration-500 bg-black/30 backdrop-blur-md px-4 py-2 rounded-lg border border-white/5">
+                            <p className="text-white text-sm md:text-lg font-bold tracking-wide">
+                                Certificate {activeIndex + 1} <span className="text-blue-400">/ {certificates.length}</span>
+                            </p>
+                        </div>
+
                     </div>
                 </Reveal>
             </div>
